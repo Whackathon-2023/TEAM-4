@@ -6,11 +6,12 @@
 	position: absolute;
 	margin: auto;
 	margin-top: 45%;
-	width: 60%;
+	width: 70%;
 	z-index: 11;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	opacity: 70%;
 }
 
 /* Import Rubik Distressed - Google Fonts  */
@@ -19,7 +20,7 @@
 /* TODO : to adapt to other browsers */
 
 :root {
-	--clr-color: white;
+	--clr-color: black;
 }
 
 body {
@@ -42,10 +43,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 150px;
-	height: 150px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
-	font-size: 1.5em;
+	font-size: 3em;
 	color: var(--clr-color);
 	/* text-shadow: -2px -2px 5px #fff; */
 	/* filter: drop-shadow(4px 4px 10px #fff); */
