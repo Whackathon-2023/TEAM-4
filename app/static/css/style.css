@@ -2,9 +2,12 @@
 	height: 40px;
 }
 
-.home {
-	width: 60%;
+.home-buttons {
+	position: absolute;
 	margin: auto;
+	margin-top: 45%;
+	width: 60%;
+	z-index: 11;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -16,7 +19,7 @@
 /* TODO : to adapt to other browsers */
 
 :root {
-	--clr-color: rgb(100, 176, 169);
+	--clr-color: white;
 }
 
 body {
@@ -32,6 +35,9 @@ body {
 }
 
 .drop {
+	transition: transform 0.3s ease;
+	/* cursor: pointer; */
+	background-color: #29b6f6;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -41,14 +47,26 @@ body {
 	border-radius: 50%;
 	font-size: 1.5em;
 	color: var(--clr-color);
-	text-shadow: -2px -2px 5px #fff;
-	filter: drop-shadow(4px 4px 10px #fff);
+	/* text-shadow: -2px -2px 5px #fff; */
+	/* filter: drop-shadow(4px 4px 10px #fff); */
 	box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
 		15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.07),
 		inset -10px -10px 15px rgba(255, 255, 255, 0.9);
 }
 
-.drop::before {
+.drop-button {
+	cursor: pointer;
+	box-shadow: none;
+	/* border: 1px solid white; */
+	z-index: 10px;
+	background-color: skyblue;
+}
+
+.drop-button:hover {
+	transform: scale(1.1);
+}
+
+/* .drop::before {
 	content: '';
 	position: absolute;
 	top: 35px;
@@ -58,9 +76,9 @@ body {
 	background: #fff;
 	border-radius: 50%;
 	filter: blur(2px);
-}
+} */
 
-.drop::after {
+/* .drop::after {
 	content: '';
 	position: absolute;
 	top: 25px;
@@ -70,4 +88,4 @@ body {
 	background: #fff;
 	border-radius: 50%;
 	filter: blur(2px);
-}
+} */
