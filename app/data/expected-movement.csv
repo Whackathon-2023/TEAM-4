@@ -1,0 +1,151 @@
+Visit #,Ship,Ship Type,Move Type,Move Status,Move Start,From Location,To Location,Agency,Last Port,Next Port
+20231032,COSCO GENOA,CONTAINER SHIP,Departure,Confirmed,9/5/23 18:00,Container Terminal 4,SEA,Gulf Agency Company (Australia) Pty/Ltd,Adelaide,Singapore
+20231153,YU PENG,GENERAL CARGO,Removal,Scheduled,9/5/23 19:30,Gage Roads N1,No. 12 NQ,Asiaworld Shipping Services,Bunbury,Singapore
+20231168,ISLAND EXPRESS,TANKER,Arrival,Confirmed,9/5/23 23:00,SEA,Outside Port Limits,Inchcape Shipping Services,Yangpu,Singapore
+20231158,PALAWAN,CONTAINER SHIP,Departure,Confirmed,9/6/23 3:00,Container Terminal 1,SEA,Inchcape Shipping Services,Singapore,Port Klang
+20220843,CAPE PILLAR,PATROL VESSEL,Removal,Scheduled,9/6/23 7:00,AUSTAL Fit out pier southern side,Gage Roads,International Maritime Services,Fremantle,Fremantle
+20231147,MSC LIDIA,CONTAINER SHIP,Removal,Confirmed,9/6/23 8:45,Outer Anchorage O4,Container Terminal 4,Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231149,APL MEXICO CITY,CONTAINER SHIP,Arrival,Scheduled,9/6/23 11:45,SEA,Container Terminal 1,Inchcape Shipping Services,Adelaide,Singapore
+20231173,TAHO AFRICA,BULK CARRIER - DRY,Arrival,Scheduled,9/6/23 13:00,SEA,Oil Refinery North Anchorage,Quay Marine Agencies P/L,Melbourne,Indonesia - other
+20220839,HMPNGS GILBERT TOROPO,PATROL VESSEL,Removal,Confirmed,9/6/23 15:00,AUSTAL Fit out pier northern side,Outside Port Limits,International Maritime Services,Fremantle,Port Moresby
+20231167,MITERA,TANKER,Arrival,Confirmed,9/6/23 15:15,SEA,No. 1 O.R.J.,Inchcape Shipping Services,Singapore,Singapore
+20231125,FRONT FUTURE,TANKER,Departure,Scheduled,9/6/23 18:30,No. 3 O.R.J.,SEA,Inchcape Shipping Services,Malacca,Singapore
+20220843,CAPE PILLAR,PATROL VESSEL,Removal,Scheduled,9/6/23 20:00,Gage Roads,AUSTAL Fit out pier northern side,International Maritime Services,Fremantle,Fremantle
+20220839,HMPNGS GILBERT TOROPO,PATROL VESSEL,Removal,Confirmed,9/6/23 21:00,Outside Port Limits,AUSTAL Fit out pier northern side,International Maritime Services,Fremantle,Port Moresby
+20231173,TAHO AFRICA,BULK CARRIER - DRY,Departure,Scheduled,9/6/23 21:30,Oil Refinery North Anchorage,SEA,Quay Marine Agencies P/L,Melbourne,Indonesia - other
+20231157,COSCO ROTTERDAM,CONTAINER SHIP,Arrival,Scheduled,9/6/23 23:15,SEA,Container Terminal 3,Gulf Agency Company (Australia) Pty/Ltd,Port Klang,Sydney
+20231097,SYDNEY EXPRESS,CONTAINER SHIP,Departure,Scheduled,9/6/23 23:30,Container Terminal 3,SEA,Gulf Agency Company (Australia) Pty/Ltd,Adelaide,Port Klang
+20231139,ASTRAL ACE,VEHICLES CARRIER,Departure,Scheduled,9/7/23 1:30,H Berth,SEA,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Adelaide
+20231172,SEEKER TIDE,OTHER  VESSELS,Removal,Scheduled,9/7/23 2:00,Gage Roads N2,Aus Marine Complex 4 West,Monson Offshore Agency,Darwin,Darwin
+20231168,ISLAND EXPRESS,TANKER,Removal,Planned,9/7/23 3:45,Outside Port Limits,No. 1 O.R.J.,Inchcape Shipping Services,Yangpu,Singapore
+20231153,YU PENG,GENERAL CARGO,Departure,Planned,9/7/23 6:00,No. 12 NQ,SEA,Asiaworld Shipping Services,Bunbury,Singapore
+20231143,JUST B,YACHT,Removal,Planned,9/7/23 7:00,AUSTAL/OCEANFAST Services pier southern side,BAE(S'lift),Superyachts 153 pty ltd,Dampier,Broome
+20231010,BESANT,OTHER  VESSELS,Removal,Planned,9/7/23 8:00,"Moresby 5,7,8",Cockburn Sound Trials Area,Teekay Shipping (Australia) Pty Ltd,Fremantle,Fremantle
+20231166,MAERSK GAIRLOCH,CONTAINER SHIP,Arrival,Planned,9/7/23 8:00,SEA,Outside Port Limits,Inchcape Shipping Services,Singapore,Adelaide
+20231184,GOLDEN KIKU,BULK CARRIER,Arrival,Planned,9/7/23 8:00,SEA,Gage Roads,Monson Agencies Australia.,Nansha,Bunbury
+20231118,STAR EAGLE,TANKER,Departure,Planned,9/7/23 8:00,No. 4 Kwin Bulk Berth,SEA,Ben Line Agencies,Singapore,Singapore
+20231156,FOREVER SPLENDOR,TANKER,Departure,Planned,9/7/23 9:00,No. 3 Kwin Bulk Berth,SEA,Gulf Agency Company (Australia) Pty/Ltd,Malaysia - other,Singapore
+20230296,NEMRUT BAY,BULK CARRIER,Arrival,Planned,9/7/23 10:00,SEA,Gage Roads,Quay Marine Agencies P/L,Indonesia - other,WA Ports - other
+20231147,MSC LIDIA,CONTAINER SHIP,Departure,Planned,9/7/23 10:00,Container Terminal 4,SEA,Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231166,MAERSK GAIRLOCH,CONTAINER SHIP,Removal,Planned,9/7/23 12:45,Outside Port Limits,Container Terminal 4,Inchcape Shipping Services,Singapore,Adelaide
+20231184,GOLDEN KIKU,BULK CARRIER,Departure,Planned,9/7/23 13:00,Gage Roads,SEA,Monson Agencies Australia.,Nansha,Bunbury
+20231167,MITERA,TANKER,Departure,Planned,9/7/23 13:00,No. 1 O.R.J.,SEA,Inchcape Shipping Services,Singapore,Singapore
+20230572,HELLFIRE BAY,TUG,Removal,Planned,9/7/23 14:30,BAE(S'lift),BAE North Wet Berth,Indian Ocean Shipping Agencies,Esperance,Esperance
+20231169,FRONT CHEETAH,TANKER,Arrival,Planned,9/7/23 14:45,SEA,Oil Refinery Anchorage,Inchcape Shipping Services,India - Other,Singapore
+20231056,CIMBRIA,CONTAINER SHIP,Arrival,Planned,9/7/23 16:00,SEA,Gage Roads,Inchcape Shipping Services,Melbourne,Port Klang
+20231010,BESANT,OTHER  VESSELS,Removal,Planned,9/7/23 16:30,Cockburn Sound Trials Area,"Moresby 5,7,8",Teekay Shipping (Australia) Pty Ltd,Fremantle,Fremantle
+20231177,CH CLARE,BULK CARRIER,Arrival,Planned,9/7/23 17:00,SEA,Gage Roads,Monson Agencies Australia.,Songkhla,Sitra
+20231172,SEEKER TIDE,OTHER  VESSELS,Departure,Planned,9/7/23 21:00,Aus Marine Complex 4 West,SEA,Monson Offshore Agency,Darwin,Darwin
+20231117,ECO MARINA DEL REY,TANKER,Arrival,Planned,9/7/23 22:00,SEA,No. 4 Kwin Bulk Berth,Ben Line Agencies,Singapore,Singapore
+20231056,CIMBRIA,CONTAINER SHIP,Removal,Planned,9/8/23 6:00,Gage Roads,Container Terminal 2,Inchcape Shipping Services,Melbourne,Port Klang
+20231149,APL MEXICO CITY,CONTAINER SHIP,Departure,Planned,9/8/23 6:00,Container Terminal 1,SEA,Inchcape Shipping Services,Adelaide,Singapore
+20230904,STOKER,OTHER  VESSELS,Removal,Planned,9/8/23 6:30,Outside Port Limits,"Moresby 5,7,8",Teekay Shipping (Australia) Pty Ltd,Fremantle,Fremantle
+20231159,SIERRA NEVADA HIGHWAY,VEHICLES CARRIER,Arrival,Planned,9/8/23 7:00,SEA,H Berth,Monson Agencies Australia.,Melbourne,Laem Chabang
+20231141,MARTIN ISLAND,GENERAL CARGO,Departure,Planned,9/8/23 7:00,No. 1 Alcoa,SEA,Monson Agencies Australia.,Kandla,Kuala Tanjung
+20231157,COSCO ROTTERDAM,CONTAINER SHIP,Departure,Planned,9/8/23 7:00,Container Terminal 3,SEA,Gulf Agency Company (Australia) Pty/Ltd,Port Klang,Sydney
+20231146,MALAYSIA BRAVE,VEHICLES CARRIER,Arrival,Planned,9/8/23 8:00,SEA,H Berth,Inchcape Shipping Services,Pyeongtaek,Darwin
+20220839,HMPNGS GILBERT TOROPO,PATROL VESSEL,Removal,Planned,9/8/23 9:00,AUSTAL Fit out pier northern side,Cockburn Sound Trials Area,International Maritime Services,Fremantle,Port Moresby
+20230764,FMG SAWFISH,TUG,Removal,Planned,9/8/23 10:00,BAE(S'lift),BAE North Wet Berth,Monson Offshore Agency,Port Hedland,Port Hedland
+20231177,CH CLARE,BULK CARRIER,Removal,Planned,9/8/23 12:00,Gage Roads,No. 1 Alcoa,Monson Agencies Australia.,Songkhla,Sitra
+20220839,HMPNGS GILBERT TOROPO,PATROL VESSEL,Removal,Planned,9/8/23 15:00,Cockburn Sound Trials Area,AUSTAL Fit out pier northern side,International Maritime Services,Fremantle,Port Moresby
+20230297,DAIWAN GLORY,BULK CARRIER,Arrival,Planned,9/8/23 20:00,SEA,Gage Roads,Quay Marine Agencies P/L,Japan - other,WA Ports - other
+20231193,WINTER SEA,BULK CARRIER,Arrival,Planned,9/8/23 20:30,SEA,Gage Roads,Monson Agencies Australia.,Cilacap,Mina Khalifa (Abu Dhabi)
+20230322,TS GOLF,BULK CARRIER,Departure,Planned,9/8/23 22:00,No. 2 Kwin Bulk Berth,SEA,Quay Marine Agencies P/L,Cilacap,WA Ports - other
+20230296,NEMRUT BAY,BULK CARRIER,Removal,Planned,9/8/23 22:00,Gage Roads,No. 2 Kwin Bulk Berth,Quay Marine Agencies P/L,Indonesia - other,WA Ports - other
+20231150,MERCURY ACE,VEHICLES CARRIER,Arrival,Planned,9/9/23 3:00,SEA,No. 12 NQ,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Adelaide
+20231056,CIMBRIA,CONTAINER SHIP,Departure,Planned,9/9/23 6:00,Container Terminal 2,SEA,Inchcape Shipping Services,Melbourne,Port Klang
+20231185,LEO SUNRISE,TANKER - LIQUEFIED GAS,Arrival,Planned,9/9/23 6:01,SEA,Outer Bunker Ground,Monson Agencies Australia.,Dampier,Singapore
+20231159,SIERRA NEVADA HIGHWAY,VEHICLES CARRIER,Departure,Planned,9/9/23 15:00,H Berth,SEA,Monson Agencies Australia.,Melbourne,Laem Chabang
+20231150,MERCURY ACE,VEHICLES CARRIER,Departure,Planned,9/9/23 16:00,No. 12 NQ,SEA,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Adelaide
+20230904,STOKER,OTHER  VESSELS,Removal,Planned,9/9/23 17:30,"Moresby 5,7,8",Outside Port Limits,Teekay Shipping (Australia) Pty Ltd,Fremantle,Fremantle
+20231155,MAPLE AMBITION,BULK CARRIER,Arrival,Planned,9/9/23 22:00,SEA,No. 12 NQ,Wilhelmsen Ships Service,Dampier,To Be Advised
+20231146,MALAYSIA BRAVE,VEHICLES CARRIER,Departure,Planned,9/10/23 8:00,H Berth,SEA,Inchcape Shipping Services,Pyeongtaek,Darwin
+20231133,ABSOLUTE,TANKER,Departure,Planned,9/10/23 8:00,No. 2 NQ,SEA,ASP Ship Management Pty Ltd,Fremantle,Fremantle
+20231187,STI BERYL,TANKER,Arrival,Planned,9/10/23 9:45,SEA,No. 1 O.R.J.,Inchcape Shipping Services,Singapore,Singapore
+20231117,ECO MARINA DEL REY,TANKER,Departure,Planned,9/10/23 13:00,No. 4 Kwin Bulk Berth,SEA,Ben Line Agencies,Singapore,Singapore
+20231163,MAERSK SEBAROK,CONTAINER SHIP,Arrival,Planned,9/10/23 14:45,SEA,Container Terminal 3,Inchcape Shipping Services,Adelaide,Port Klang
+20231155,MAPLE AMBITION,BULK CARRIER,Departure,Planned,9/10/23 22:00,No. 12 NQ,SEA,Wilhelmsen Ships Service,Dampier,To Be Advised
+20231180,HSL CHICAGO,BULK CARRIER,Arrival,Planned,9/11/23 2:00,SEA,Oil Refinery North Anchorage,Monson Agencies Australia.,Singapore,Subic Bay
+20231148,MSC CORDELIA III,CONTAINER SHIP,Arrival,Planned,9/11/23 4:00,SEA,Outer Anchorages (1-7),Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231179,OOCL CHICAGO,CONTAINER SHIP,Arrival,Planned,9/11/23 4:45,SEA,Container Terminal 4,Inchcape Shipping Services,Adelaide,Singapore
+20231193,WINTER SEA,BULK CARRIER,Removal,Planned,9/11/23 6:01,Gage Roads,No. 1 Alcoa,Monson Agencies Australia.,Cilacap,Mina Khalifa (Abu Dhabi)
+20231185,LEO SUNRISE,TANKER - LIQUEFIED GAS,Removal,Planned,9/11/23 6:46,Outer Bunker Ground,No. 3 Kwin Bulk Berth,Monson Agencies Australia.,Dampier,Singapore
+20231177,CH CLARE,BULK CARRIER,Departure,Planned,9/11/23 7:00,No. 1 Alcoa,SEA,Monson Agencies Australia.,Songkhla,Sitra
+20231166,MAERSK GAIRLOCH,CONTAINER SHIP,Departure,Planned,9/11/23 7:00,Container Terminal 4,SEA,Inchcape Shipping Services,Singapore,Adelaide
+20230990,CHARLEY 2,YACHT,Removal,Planned,9/11/23 8:01,AUSTAL/OCEANFAST Services pier northern side,Cockburn Sound Trials Area,International Maritime Services,Fremantle,Fremantle
+20231089,JAYA,OTHER  VESSELS,Departure,Planned,9/11/23 10:00,AUSTAL/OCEANFAST Services pier southern side,SEA,CMC Marine,Yampi Sound,Fremantle
+20230308,PERSEVERANCE V,TANKER - LIQUEFIED GAS,Arrival,Planned,9/11/23 11:45,SEA,Oil Refinery North Anchorage,Indian Ocean Shipping Agencies,Port Bonython,To Be Advised
+20230990,CHARLEY 2,YACHT,Removal,Planned,9/11/23 15:01,Cockburn Sound Trials Area,AUSTAL/OCEANFAST Services pier northern side,International Maritime Services,Fremantle,Fremantle
+20231176,DELOS WAVE,CONTAINER SHIP,Arrival,Planned,9/11/23 19:00,SEA,Container Terminal 2,Inchcape Shipping Services,Melbourne,Port Klang
+20231148,MSC CORDELIA III,CONTAINER SHIP,Removal,Planned,9/12/23 3:45,Outer Anchorages (1-7),Container Terminal 4,Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231171,GRACE C,BULK CARRIER,Arrival,Planned,9/12/23 5:01,SEA,Gage Roads,Monson Agencies Australia.,Bunbury,Port Klang
+20230572,HELLFIRE BAY,TUG,Departure,Planned,9/12/23 12:00,BAE North Wet Berth,SEA,Indian Ocean Shipping Agencies,Esperance,Esperance
+20231163,MAERSK SEBAROK,CONTAINER SHIP,Departure,Planned,9/12/23 15:00,Container Terminal 3,SEA,Inchcape Shipping Services,Adelaide,Port Klang
+20231179,OOCL CHICAGO,CONTAINER SHIP,Departure,Planned,9/12/23 16:00,Container Terminal 4,SEA,Inchcape Shipping Services,Adelaide,Singapore
+20231176,DELOS WAVE,CONTAINER SHIP,Departure,Planned,9/12/23 22:00,Container Terminal 2,SEA,Inchcape Shipping Services,Melbourne,Port Klang
+20231175,BBC EMSLAND,GENERAL CARGO,Arrival,Planned,9/12/23 22:00,SEA,No. 11 NQ,Indian Ocean Shipping Agencies,Mackay,Singapore
+20230296,NEMRUT BAY,BULK CARRIER,Departure,Planned,9/12/23 22:00,No. 2 Kwin Bulk Berth,SEA,Quay Marine Agencies P/L,Indonesia - other,WA Ports - other
+20231187,STI BERYL,TANKER,Departure,Planned,9/12/23 23:01,No. 1 O.R.J.,SEA,Inchcape Shipping Services,Singapore,Singapore
+20231185,LEO SUNRISE,TANKER - LIQUEFIED GAS,Departure,Planned,9/12/23 23:59,No. 3 Kwin Bulk Berth,SEA,Monson Agencies Australia.,Dampier,Singapore
+20231169,FRONT CHEETAH,TANKER,Removal,Planned,9/13/23 6:00,Oil Refinery Anchorage,No. 3 O.R.J.,Inchcape Shipping Services,India - Other,Singapore
+20231148,MSC CORDELIA III,CONTAINER SHIP,Departure,Planned,9/13/23 7:00,Container Terminal 4,SEA,Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231178,APL VANCOUVER,CONTAINER SHIP,Arrival,Planned,9/13/23 11:45,SEA,Container Terminal 2,Inchcape Shipping Services,Adelaide,Singapore
+20231193,WINTER SEA,BULK CARRIER,Departure,Planned,9/13/23 15:01,No. 1 Alcoa,SEA,Monson Agencies Australia.,Cilacap,Mina Khalifa (Abu Dhabi)
+20231171,GRACE C,BULK CARRIER,Removal,Planned,9/13/23 15:01,Gage Roads,No. 1 Alcoa,Monson Agencies Australia.,Bunbury,Port Klang
+20231175,BBC EMSLAND,GENERAL CARGO,Departure,Planned,9/13/23 18:00,No. 11 NQ,SEA,Indian Ocean Shipping Agencies,Mackay,Singapore
+20231116,ASC LOTTI,GENERAL CARGO,Arrival,Planned,9/13/23 23:01,SEA,No. 11 NQ,Asiaworld Shipping Services,Batam,Cocos Island
+20231182,DALIAN,CONTAINER SHIP,Arrival,Planned,9/14/23 4:30,SEA,Container Terminal 4,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Tanjung Pelapas
+20231025,PROGRESS C,CONTAINER SHIP,Arrival,Planned,9/14/23 8:30,SEA,Container Terminal 1,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Singapore
+20230308,PERSEVERANCE V,TANKER - LIQUEFIED GAS,Removal,Planned,9/14/23 12:01,Oil Refinery North Anchorage,No. 2 Kwin Bulk Berth,Indian Ocean Shipping Agencies,Port Bonython,To Be Advised
+20231178,APL VANCOUVER,CONTAINER SHIP,Departure,Planned,9/15/23 6:00,Container Terminal 2,SEA,Inchcape Shipping Services,Adelaide,Singapore
+20230308,PERSEVERANCE V,TANKER - LIQUEFIED GAS,Departure,Planned,9/15/23 6:00,No. 2 Kwin Bulk Berth,SEA,Indian Ocean Shipping Agencies,Port Bonython,To Be Advised
+20230432,LAUSANNE,BULK CARRIER,Arrival,Planned,9/15/23 6:01,SEA,No. 2 Kwin Bulk Berth,Indian Ocean Shipping Agencies,To Be Advised,To Be Advised
+20231171,GRACE C,BULK CARRIER,Departure,Planned,9/15/23 11:00,No. 1 Alcoa,SEA,Monson Agencies Australia.,Bunbury,Port Klang
+20231169,FRONT CHEETAH,TANKER,Departure,Planned,9/15/23 12:00,No. 3 O.R.J.,SEA,Inchcape Shipping Services,India - Other,Singapore
+20230297,DAIWAN GLORY,BULK CARRIER,Removal,Planned,9/15/23 12:00,Gage Roads,No. 2 Kwin Bulk Berth,Quay Marine Agencies P/L,Japan - other,WA Ports - other
+20231168,ISLAND EXPRESS,TANKER,Departure,Planned,9/15/23 18:00,No. 1 O.R.J.,SEA,Inchcape Shipping Services,Yangpu,Singapore
+20220823,SVITZER NAIAD,TUG,Departure,Planned,9/16/23 7:00,BAE North Wet Berth,SEA,Quay Trade Logistics Pty Ltd,Bunbury,Bunbury
+20231162,ARC COMMITMENT,VEHICLES CARRIER,Arrival,Planned,9/16/23 21:45,SEA,No. 12 NQ,Wilhelmsen Ships Service,Melbourne,Dalian
+20231186,VIKING CORAL,VEHICLES CARRIER,Arrival,Planned,9/16/23 22:00,SEA,H Berth,Monson Agencies Australia.,Hiroshima,Darwin
+20231025,PROGRESS C,CONTAINER SHIP,Departure,Planned,9/16/23 22:00,Container Terminal 1,SEA,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Singapore
+20231182,DALIAN,CONTAINER SHIP,Departure,Planned,9/16/23 23:00,Container Terminal 4,SEA,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Tanjung Pelapas
+20231180,HSL CHICAGO,BULK CARRIER,Removal,Planned,9/17/23 5:00,Oil Refinery North Anchorage,Kwinana Grain Jetty,Monson Agencies Australia.,Singapore,Subic Bay
+20231186,VIKING CORAL,VEHICLES CARRIER,Departure,Planned,9/17/23 23:00,H Berth,SEA,Monson Agencies Australia.,Hiroshima,Darwin
+20231162,ARC COMMITMENT,VEHICLES CARRIER,Departure,Planned,9/18/23 2:00,No. 12 NQ,SEA,Wilhelmsen Ships Service,Melbourne,Dalian
+20230321,ILEKTRA,BULK CARRIER,Arrival,Planned,9/18/23 12:00,SEA,Gage Roads,Quay Marine Agencies P/L,Cape Cuvier,WA Ports - other
+20230432,LAUSANNE,BULK CARRIER,Departure,Planned,9/18/23 12:01,No. 2 Kwin Bulk Berth,SEA,Indian Ocean Shipping Agencies,To Be Advised,To Be Advised
+20231180,HSL CHICAGO,BULK CARRIER,Removal,Planned,9/18/23 23:00,Kwinana Grain Jetty,Oil Refinery North Anchorage,Monson Agencies Australia.,Singapore,Subic Bay
+20231181,KARIYUSHI LEADER,VEHICLES CARRIER,Arrival,Planned,9/18/23 23:01,SEA,H Berth,Monson Agencies Australia.,Adelaide,Laem Chabang
+20231180,HSL CHICAGO,BULK CARRIER,Departure,Planned,9/19/23 10:00,Oil Refinery North Anchorage,SEA,Monson Agencies Australia.,Singapore,Subic Bay
+20231116,ASC LOTTI,GENERAL CARGO,Departure,Planned,9/19/23 23:00,No. 11 NQ,SEA,Asiaworld Shipping Services,Batam,Cocos Island
+20231181,KARIYUSHI LEADER,VEHICLES CARRIER,Departure,Planned,9/21/2023,H Berth,SEA,Monson Agencies Australia.,Adelaide,Laem Chabang
+20230297,DAIWAN GLORY,BULK CARRIER,Departure,Planned,9/21/23 12:00,No. 2 Kwin Bulk Berth,SEA,Quay Marine Agencies P/L,Japan - other,WA Ports - other
+20221382,NAFANUA III,PATROL VESSEL,Departure,Planned,9/21/23 15:01,AUSTAL Fit out pier northern side,SEA,International Maritime Services,Fremantle,Apia
+20230323,SOUTHGATE,BULK CARRIER,Arrival,Planned,9/23/2023,SEA,No. 2 Kwin Bulk Berth,Quay Marine Agencies P/L,Japan - other,WA Ports - other
+20230317,Unknown,UNKNOWN,Arrival,Planned,9/23/2023,SEA,No. 2 Kwin Bulk Berth,Quay Marine Agencies P/L,To Be Advised,To Be Advised
+20231164,MSC REBECCA,CONTAINER SHIP,Arrival,Planned,9/23/23 3:45,SEA,Container Terminal 3,Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231165,ALS VESTA,CONTAINER SHIP,Arrival,Planned,9/23/23 11:45,SEA,Container Terminal 1,Inchcape Shipping Services,Melbourne,Port Klang
+20231161,BUNUN LEADER,BULK CARRIER,Arrival,Planned,9/23/23 16:00,SEA,No. 3 Kwin Bulk Berth,Indian Ocean Shipping Agencies,Portland (Oregon),Adelaide
+20231164,MSC REBECCA,CONTAINER SHIP,Departure,Planned,9/24/23 7:00,Container Terminal 3,SEA,Gulf Agency Company (Australia) Pty/Ltd,Jakarta,Adelaide
+20231165,ALS VESTA,CONTAINER SHIP,Departure,Planned,9/25/23 15:00,Container Terminal 1,SEA,Inchcape Shipping Services,Melbourne,Port Klang
+20230309,Unknown,UNKNOWN,Arrival,Planned,9/26/2023,SEA,No. 2 Kwin Bulk Berth,Indian Ocean Shipping Agencies,To Be Advised,To Be Advised
+20231161,BUNUN LEADER,BULK CARRIER,Departure,Planned,9/27/23 23:59,No. 3 Kwin Bulk Berth,SEA,Indian Ocean Shipping Agencies,Portland (Oregon),Adelaide
+20230309,Unknown,UNKNOWN,Departure,Planned,9/28/2023,No. 2 Kwin Bulk Berth,SEA,Indian Ocean Shipping Agencies,To Be Advised,To Be Advised
+20230314,Unknown,UNKNOWN,Arrival,Planned,9/28/2023,SEA,No. 2 Kwin Bulk Berth,Indian Ocean Shipping Agencies,To Be Advised,To Be Advised
+20231160,ULTRA VANSCOY,BULK CARRIER,Arrival,Planned,9/28/23 3:00,SEA,No. 12 NQ,Sturrock Grindrod Maritime (Australia),Port Adelaide,Vietnam - other
+20231183,CANOPUS LEADER,VEHICLES CARRIER,Arrival,Planned,9/28/23 23:01,SEA,H Berth,Monson Agencies Australia.,Brisbane,Laem Chabang
+20230314,Unknown,UNKNOWN,Departure,Planned,9/29/2023,No. 2 Kwin Bulk Berth,SEA,Indian Ocean Shipping Agencies,To Be Advised,To Be Advised
+20230764,FMG SAWFISH,TUG,Departure,Planned,9/29/23 0:01,BAE North Wet Berth,SEA,Monson Offshore Agency,Port Hedland,Port Hedland
+20221377,ISLAND ESCAPE,PASSENGER SHIP,Departure,Planned,9/29/23 0:01,Fishing Boat Harbour,SEA,Monson Offshore Agency,Broome,Fremantle
+20220685,DAVID W. PANUELO,PATROL VESSEL,Removal,Planned,9/29/23 13:01,AUSTAL Fit out pier northern side,"Moresby 5,7,8",International Maritime Services,Singapore,Pacific Islands - other
+20230324,Unknown,UNKNOWN,Arrival,Planned,9/30/2023,SEA,No. 2 Kwin Bulk Berth,Quay Marine Agencies P/L,To Be Advised,To Be Advised
+20231183,CANOPUS LEADER,VEHICLES CARRIER,Departure,Planned,9/30/23 0:01,H Berth,SEA,Monson Agencies Australia.,Brisbane,Laem Chabang
+20230321,ILEKTRA,BULK CARRIER,Removal,Planned,9/30/23 12:00,Gage Roads,No. 2 Kwin Bulk Berth,Quay Marine Agencies P/L,Cape Cuvier,WA Ports - other
+20230558,IMMORTALIS,TRAINING SHIP,Departure,Planned,9/30/23 14:01,Fishing Boat Harbour,SEA,International Maritime Services,Albany,Singapore
+20231188,ONYX ACE,VEHICLES CARRIER,Arrival,Planned,9/30/23 23:00,SEA,H Berth,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Adelaide
+20231188,ONYX ACE,VEHICLES CARRIER,Departure,Planned,10/2/2023,H Berth,SEA,Gulf Agency Company (Australia) Pty/Ltd,Singapore,Adelaide
+20230317,Unknown,UNKNOWN,Departure,Planned,10/2/2023,No. 2 Kwin Bulk Berth,SEA,Quay Marine Agencies P/L,To Be Advised,To Be Advised
+20230788,CAPE PILLAR,PATROL VESSEL,Departure,Planned,10/2/23 14:01,AUSTAL Fit out pier northern side,SEA,International Maritime Services,Fremantle,Fremantle
+20231160,ULTRA VANSCOY,BULK CARRIER,Departure,Planned,10/2/23 23:00,No. 12 NQ,SEA,Sturrock Grindrod Maritime (Australia),Port Adelaide,Vietnam - other
+20230324,Unknown,UNKNOWN,Departure,Planned,10/4/2023,No. 2 Kwin Bulk Berth,SEA,Quay Marine Agencies P/L,To Be Advised,To Be Advised
+20230321,ILEKTRA,BULK CARRIER,Departure,Planned,10/4/23 12:00,No. 2 Kwin Bulk Berth,SEA,Quay Marine Agencies P/L,Cape Cuvier,WA Ports - other
