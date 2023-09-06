@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"
-		/>
-		<link rel="stylesheet" href="static/map.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.3.4/leaflet-routing-machine.js"></script>
-	</head>
-	<body>
-		<!-- Add this inside the body of your HTML file -->
+{% extends "components/layout.html" %}{% block content %}
 
-		<div id="map-container" style="width: 80%; height: 80%"></div>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}" />
+
+		<div id="map-container"></div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-polyline-decorator/1.0.12/leaflet.polylineDecorator.min.js"></script>
-
-		<script src="static/javascript.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.3.4/leaflet-routing-machine.js"></script>
 		<script src="static/js/map.js"></script>
-	</body>
-</html>
+
+
+{% endblock %}

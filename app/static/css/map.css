@@ -33,3 +33,7 @@ body {
 	margin: auto;
 }
 /* styles.css */
+#map-container{
+	width: 800px; 
+	height: 600px;
+}
