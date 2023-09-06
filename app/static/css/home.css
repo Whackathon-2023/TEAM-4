@@ -145,10 +145,12 @@ p {
 
 	transition: transform 0.3s ease;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .home-button:hover {
 	transform: scale(1.1);
+	text-decoration: none;
 }
 
 .home-button p {

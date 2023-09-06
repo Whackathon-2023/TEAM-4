@@ -1,0 +1,69 @@
+body {
+	height: 100vh;
+	background: linear-gradient(
+		60deg,
+		rgba(84, 58, 183, 0.1) 0%,
+		rgba(0, 172, 193, 0.1) 100%
+	);
+}
+
+.send-btn {
+	display: flex;
+	align-items: flex-end; /* Align the button to the bottom */
+}
+
+.send-btn-allowed svg {
+	color: rgba(84, 58, 183, 1) !important;
+}
+
+.send-btn svg {
+	height: 20px;
+	color: rgba(84, 58, 183, 0.5);
+}
+
+/* Style the textarea container */
+.textarea-container {
+	position: absolute;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+	bottom: 0;
+	width: 80%;
+	margin: auto auto 40px 0px;
+}
+
+/* Style the textarea */
+.textarea-container textarea {
+	width: 100%;
+	padding: 10px;
+	/* border: 2px solid #ccc; */
+	border: none;
+	border-radius: 16px;
+	font-size: 16px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	resize: none; /* Disable manual resizing */
+	overflow: auto; /* Add scrollbar when needed */
+}
+
+/* Style the textarea label */
+.textarea-label {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	pointer-events: none; /* Prevent label from interfering with textarea */
+	transition: 0.2s ease-out;
+	color: #777; /* Placeholder text color */
+}
+
+/* Style the label when the textarea is focused or has content */
+.textarea-container textarea:focus + .textarea-label,
+.textarea-container textarea:not(:placeholder-shown) + .textarea-label {
+	transform: translate(0, -25px);
+	font-size: 12px;
+	color: #007bff; /* Highlight color */
+}
+
+/* Style the textarea when it's focused */
+.textarea-container textarea:focus {
+	border-color: #007bff; /* Highlight border color on focus */
+}
