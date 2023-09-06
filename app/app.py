@@ -6,8 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/layout')
-def layout_page():
-    return render_template('home.html')
+@app.route('/map')
+def map_page():
+    return render_template('map.html')
+
 if __name__ == '__main__':
     app.run()
