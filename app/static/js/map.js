@@ -2,9 +2,9 @@
 API_KEY = '6f17bce624f94d769b279d0b8f61bc39';
 
 let jsonData;
-
+async function fetch_table(){
 // Make an HTTP GET request to the Python server
-fetch('/get_object')
+await fetch('/get_object')
   .then(response => response.json())
   .then(data => {
     // Assign the JSON data to the variable
@@ -13,13 +13,35 @@ fetch('/get_object')
     // For example, you can call a function to process the data
     processData(jsonData);
     
-
+    markers(jsonData);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-
+}
 let ports = ['Geraldton', 'BCJ4', 'BCJ3', 'Bunbury', 'Albany', 'Esperance'];
+fetch_table();
+
+
+
+function markers(jsonData){
+    // Assuming jsonData is an object with keys representing place names
+    for (const placeName in jsonData) {
+    if (jsonData.hasOwnProperty(placeName)) {
+      const placeData = jsonData[placeName]['port'];
+  
+      // Now you can access placeName (the place name) and placeData (the data associated with it)
+      console.log(`Place Name: ${placeName}`);
+      console.log(`Place Data: `, placeData);
+      
+      // You can call addMarkersForPlaces or perform other actions for each placeData here
+      addMarkersForPlaces([placeName]);
+    }
+  }
+  
+}
+
+
 
 // Example function to process the JSON data
 function processData(data) {
@@ -31,42 +53,57 @@ function processData(data) {
   console.log('Processing data:', data);
 }
 
+
+
 var map = L.map('map-container').setView([0, 0], 2); // Set the initial view with a global scope
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 }).addTo(map);
 
-// Function to add a marker for a place based on its name
-function addMarkerForPlace(placeName) {
-	// Use a geocoding service to obtain the latitude and longitude for the given placeName
-	// Replace 'YOUR_API_KEY' with your actual API key for the chosen geocoding service
-	var geocodingServiceURL = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(
-		placeName
-	)}&key=${API_KEY}`;
+function fetchCoordinatesForPlace(placeName) {
+    // Replace 'YOUR_API_KEY' with your actual API key for the chosen geocoding service
+    var geocodingServiceURL = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(
+      placeName
+    )}&key=${API_KEY}`;
+  
+    return fetch(geocodingServiceURL)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (data.results.length > 0) {
+          var coordinates = data.results[0].geometry;
+          return { lat: coordinates.lat, lng: coordinates.lng };
+        } else {
+          throw new Error('Place not found. Please enter a valid place name.');
+        }
+      });
+  }
 
-	fetch(geocodingServiceURL)
-		.then((response) => response.json())
-		.then((data) => {
-			if (data.results.length > 0) {
-				var coordinates = data.results[0].geometry;
-				var marker = L.marker([coordinates.lat, coordinates.lng]).addTo(
-					map
-				);
-				marker.bindPopup(placeName);
-				map.setView([coordinates.lat, coordinates.lng], 10); // Adjust the view to the place's location
-			} else {
-				alert('Place not found. Please enter a valid place name.');
-			}
-		})
-		.catch((error) => {
-			console.error('Error fetching geocoding data: ', error);
-		});
-}
+  function addMarkersForPlaces(placeNames) {
+    // Iterate through the array of place names
+    placeNames.forEach((placeName) => {
+      // Use the fetchCoordinatesForPlace function to fetch coordinates for each place name
+      fetchCoordinatesForPlace(placeName)
+        .then((coordinates) => {
+          // Create a marker for the place and add it to the map
+          var marker = L.marker([coordinates.lat, coordinates.lng]).addTo(map);
+          marker.bindPopup(placeName);
+        })
+        .catch((error) => {
+          console.error(`Error for place ${placeName}:`, error.message);
+        });
+    });
+  }
+
 
 // Example usage: Add a marker for a place based on its name
 // var placeNameInput = prompt("Enter the name of a place:");
 var placeNameInput = 'Fremantle';
 if (placeNameInput) {
-	addMarkerForPlace(placeNameInput);
+	addMarkersForPlaces(placeNameInput);
 }

@@ -96,6 +96,7 @@ class Shipping:
             table['volume'] = [round(random_volume()) for i in range(len(table))]
             table['index'] = table.apply(lambda x: (x['index']//30 +1), axis = 1)
             table['competitor'] = table[port].apply(competitors_name)
+            table['port'] = table[port].apply(lambda x: port)
             table = table[table['product'].str.len() > 2]
             table = table.dropna()
    
