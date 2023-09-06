@@ -1,12 +1,3 @@
-body {
-	height: 100vh;
-	background: linear-gradient(
-		60deg,
-		rgba(84, 58, 183, 0.1) 0%,
-		rgba(0, 172, 193, 0.1) 100%
-	);
-}
-
 .search-container {
 	width: 100%;
 }

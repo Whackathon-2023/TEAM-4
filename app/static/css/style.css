@@ -19,14 +19,6 @@
 	--clr-color: rgb(100, 176, 169);
 }
 
-body {
-	/* display: flex; */
-	/* align-items: center; */
-	/* justify-content: center; */
-	/* min-height: 100vh; */
-	background: #eee;
-}
-
 .drop-container {
 	display: flex;
 }
@@ -71,3 +63,38 @@ body {
 	border-radius: 50%;
 	filter: blur(2px);
 }
+
+body {
+	background: linear-gradient(
+		60deg,
+		rgba(84, 58, 183, 1) 0%,
+		rgba(0, 172, 193, 1) 100%
+	) !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+li {
+	float: left;
+}
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	transition-duration: 0.2s;
+  }
+  
+  li a:hover {
+    background: rgba(0, 0, 0, 1);
+	text-decoration: none;
+	color: white;
+  }

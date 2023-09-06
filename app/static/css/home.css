@@ -2,6 +2,7 @@
 
 body {
 	margin: 0;
+	overflow: hidden;
 }
 
 h1 {
@@ -20,11 +21,6 @@ p {
 .header {
 	position: relative;
 	text-align: center;
-	background: linear-gradient(
-		60deg,
-		rgba(84, 58, 183, 1) 0%,
-		rgba(0, 172, 193, 1) 100%
-	);
 	color: white;
 }
 .logo {
@@ -50,6 +46,16 @@ p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.white-background-below-waves {
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100%);  
+    background-color: white;
+    z-index: -1; 
 }
 
 .waves {
@@ -156,3 +162,4 @@ p {
 .home-button p {
 	margin-bottom: 6px;
 }
+
