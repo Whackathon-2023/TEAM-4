@@ -1,7 +1,35 @@
 // script.js
 API_KEY = '6f17bce624f94d769b279d0b8f61bc39';
-// script.js
 
+let jsonData;
+
+// Make an HTTP GET request to the Python server
+fetch('/get_object')
+  .then(response => response.json())
+  .then(data => {
+    // Assign the JSON data to the variable
+    jsonData = data;
+    // You can update your webpage or perform actions with the data
+    // For example, you can call a function to process the data
+    processData(jsonData);
+    
+
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+let ports = ['Geraldton', 'BCJ4', 'BCJ3', 'Bunbury', 'Albany', 'Esperance'];
+
+// Example function to process the JSON data
+function processData(data) {
+  // Do something with the JSON data
+  // For example, you can access specific properties or iterate through arrays
+  for (let i = 0; i < ports.length; i++) {
+    data[ports[i]] = JSON.parse(data[ports[i]]);
+  }
+  console.log('Processing data:', data);
+}
 
 var map = L.map('map-container').setView([0, 0], 2); // Set the initial view with a global scope
 

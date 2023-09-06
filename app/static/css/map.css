@@ -32,8 +32,12 @@ body {
 	height: 80%;
 	margin: auto;
 }
-/* styles.css */
-#map-container{
-	width: 800px; 
+#map-container {
+	width: 800px;
 	height: 600px;
-}
+	margin: 0 auto; /* Center horizontally */
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+  }
+  

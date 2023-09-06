@@ -1,6 +1,6 @@
 import csv
+from shipping import Shipping
 from flask import Flask, jsonify, render_template, request, send_from_directory
-
 
 app = Flask(__name__)
 
@@ -21,6 +21,14 @@ def home():
 @app.route('/map')
 def map_page():
     return render_template('map.html')
+
+# Define an endpoint to retrieve the object
+@app.route('/get_object', methods=['GET'])
+def get_object():
+    obj = Shipping()
+    obj.make_table()
+    obj.json_form()
+    return jsonify(obj.table)
 
 @app.route('/search')
 def search():
