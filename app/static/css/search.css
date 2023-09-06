@@ -7,6 +7,10 @@ body {
 	);
 }
 
+.search-container {
+	width: 100%;
+}
+
 .send-btn {
 	display: flex;
 	align-items: flex-end; /* Align the button to the bottom */
@@ -29,7 +33,7 @@ body {
 	flex-direction: row;
 	bottom: 0;
 	width: 80%;
-	margin: auto auto 40px 0px;
+	margin: auto auto 40px 10%;
 }
 
 /* Style the textarea */
@@ -40,9 +44,16 @@ body {
 	border: none;
 	border-radius: 16px;
 	font-size: 16px;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+	border: solid 1px rgba(149, 157, 165, 0.2);
+
 	resize: none; /* Disable manual resizing */
 	overflow: auto; /* Add scrollbar when needed */
+}
+
+.textarea-container textarea:focus {
+	outline: none;
+	/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 /* Style the textarea label */
@@ -66,4 +77,21 @@ body {
 /* Style the textarea when it's focused */
 .textarea-container textarea:focus {
 	border-color: #007bff; /* Highlight border color on focus */
+}
+
+.textarea-answer-container {
+	padding: 10px;
+	position: fixed;
+	background-color: white;
+	width: 78%;
+	margin: 20px auto 0px 10%;
+	height: 70%;
+	/* border: 2px solid #ccc; */
+	border: none;
+	border-radius: 16px;
+	font-size: 16px;
+	/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+	border: solid 1px rgba(149, 157, 165, 0.2);
+	resize: none; /* Disable manual resizing */
+	overflow: auto; /* Add scrollbar when needed */
 }
