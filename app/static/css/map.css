@@ -1,12 +1,3 @@
-body {
-	height: 100vh;
-	background: linear-gradient(
-		60deg,
-		rgba(84, 58, 183, 0.1) 0%,
-		rgba(0, 172, 193, 0.1) 100%
-	);
-}
-
 /* Define CSS for the arrowhead symbols */
 .arrow-icon {
 	zindex: 1000; /* Ensure the arrowhead is on top of the PolyLine */
@@ -39,5 +30,4 @@ body {
 	display: flex;
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
-  }
-  
+}

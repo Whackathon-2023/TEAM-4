@@ -3,6 +3,11 @@
 body {
 	margin: 0;
 	overflow: hidden;
+	background: linear-gradient(
+		60deg,
+		rgba(84, 58, 183, 1) 0%,
+		rgba(0, 172, 193, 1) 100%
+	) !important;
 }
 
 h1 {
@@ -49,13 +54,13 @@ p {
 }
 
 .white-background-below-waves {
-    position: absolute;
-    top: 100%;  
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 100%);  
-    background-color: white;
-    z-index: -1; 
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 100%);
+	background-color: white;
+	z-index: -1;
 }
 
 .waves {
@@ -162,4 +167,3 @@ p {
 .home-button p {
 	margin-bottom: 6px;
 }
-

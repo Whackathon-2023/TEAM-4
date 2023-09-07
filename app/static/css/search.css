@@ -76,7 +76,7 @@
 	background-color: white;
 	width: 78%;
 	margin: 20px auto 0px 10%;
-	height: 70%;
+	height: 65%;
 	/* border: 2px solid #ccc; */
 	border: none;
 	border-radius: 16px;
@@ -85,4 +85,13 @@
 	border: solid 1px rgba(149, 157, 165, 0.2);
 	resize: none; /* Disable manual resizing */
 	overflow: auto; /* Add scrollbar when needed */
+}
+
+.waves {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
 }

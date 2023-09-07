@@ -67,34 +67,43 @@
 body {
 	background: linear-gradient(
 		60deg,
-		rgba(84, 58, 183, 1) 0%,
-		rgba(0, 172, 193, 1) 100%
-	) !important;
+		rgba(84, 58, 183, 0.2) 0%,
+		rgba(0, 172, 193, 0.2) 100%
+	);
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-  
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
 li {
 	float: left;
 }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 	transition-duration: 0.2s;
-  }
-  
-  li a:hover {
-    background: rgba(0, 0, 0, 1);
+}
+
+li a:hover {
+	background: rgba(0, 0, 0, 1);
 	text-decoration: none;
 	color: white;
-  }
+}
+
+.logo {
+	height: 20px;
+	pointer-events: none;
+}
+
+.logo-anchor:hover {
+	background-color: white;
+}

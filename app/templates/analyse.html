@@ -1,95 +1,126 @@
 {% extends "components/layout.html" %} {% block content %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
-<link rel="stylesheet" href="{{ url_for('static', filename='css/analyse.css') }}" />
-<script src="{{url_for('static', filename='js/data-collation.js')}}" defer></script>
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" /> -->
+<link
+	rel="stylesheet"
+	href="{{ url_for('static', filename='css/analyse.css') }}"
+/>
+<script
+	src="{{url_for('static', filename='js/data-collation.js')}}"
+	defer
+></script>
 <script>
-    $(window).on("load resize ", function () {
-        var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
-        $('.tbl-header').css({ 'padding-right': scrollWidth });
-    }).resize();
+	$(window)
+		.on('load resize ', function () {
+			var scrollWidth =
+				$('.tbl-content').width() - $('.tbl-content table').width();
+			$('.tbl-header').css({ 'padding-right': scrollWidth });
+		})
+		.resize();
 </script>
 
-
 <section>
-    <h1>Vessels Used by Competitors</h1>
-    <div class="tbl-header">
-        <table cellpadding="0" cellspacing="0" border="0">
-            <thead>
-                <tr>
-                    <th>Company Name</th>
-                    <th>Vessel</th>
-                    <th>Product Type</th>
-                    <th>FOB price per unit (AUD)</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-    <div class="tbl-content">
-        <table cellpadding="0" cellspacing="0" border="0">
-            <tbody id="collated-data">
-                <tr>
-                    <td>EXAMPLE_COMP1</td>
-                    <td>COSCO GENOA</td>
-                    <td>Urea</td>
-                    <td>$ 350</td>
-                    <td>01/02/2023</td>
-                </tr>
-                <tr>
-                    <td>EXAMPLE_COMP1</td>
-                    <td>COSCO GENOA</td>
-                    <td>UAN</td>
-                    <td>$ 350</td>
-                    <td>01/02/2023</td>
-                </tr>
-                <tr>
-                    <td>EXAMPLE_COMP1</td>
-                    <td>COSCO GENOA</td>
-                    <td>Urea</td>
-                    <td>$ 350</td>
-                    <td>01/02/2023</td>
-                </tr>
-                <tr>
-                    <td>EXAMPLE_COMP1</td>
-                    <td>COSCO GENOA</td>
-                    <td>MAP</td>
-                    <td>$ 350</td>
-                    <td>01/02/2023</td>
-                </tr>
-                <tr>
-                    <td>EXAMPLE_COMP1</td>
-                    <td>ISLAND EXPRESS</td>
-                    <td>Urea</td>
-                    <td>$ 350</td>
-                    <td>01/02/2023</td>
-                </tr>
-                <tr>
-                    <td>EXAMPLE_COMP1</td>
-                    <td>CAPE PILLAR</td>
-                    <td>MAP</td>
-                    <td>$ 350</td>
-                    <td>03/04/2023</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+	<h1>Vessels Used by Competitors</h1>
+	<div class="tbl-header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>Company Name</th>
+					<th>Vessel</th>
+					<th>Product Type</th>
+					<th>FOB price per unit (AUD)</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody id="collated-data">
+				<tr>
+					<td>EXAMPLE_COMP1</td>
+					<td>COSCO GENOA</td>
+					<td>Urea</td>
+					<td>$ 350</td>
+					<td>01/02/2023</td>
+				</tr>
+				<tr>
+					<td>EXAMPLE_COMP1</td>
+					<td>COSCO GENOA</td>
+					<td>UAN</td>
+					<td>$ 350</td>
+					<td>01/02/2023</td>
+				</tr>
+				<tr>
+					<td>EXAMPLE_COMP1</td>
+					<td>COSCO GENOA</td>
+					<td>Urea</td>
+					<td>$ 350</td>
+					<td>01/02/2023</td>
+				</tr>
+				<tr>
+					<td>EXAMPLE_COMP1</td>
+					<td>COSCO GENOA</td>
+					<td>MAP</td>
+					<td>$ 350</td>
+					<td>01/02/2023</td>
+				</tr>
+				<tr>
+					<td>EXAMPLE_COMP1</td>
+					<td>ISLAND EXPRESS</td>
+					<td>Urea</td>
+					<td>$ 350</td>
+					<td>01/02/2023</td>
+				</tr>
+				<tr>
+					<td>EXAMPLE_COMP1</td>
+					<td>CAPE PILLAR</td>
+					<td>MAP</td>
+					<td>$ 350</td>
+					<td>03/04/2023</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </section>
 
 <!--Waves Container-->
-<div>
-    <svg class=" waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-    </svg>
-</div>
-
+<!-- <div>
+	<svg
+		class="waves"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		viewBox="0 24 150 28"
+		preserveAspectRatio="none"
+		shape-rendering="auto"
+	>
+		<defs>
+			<path
+				id="gentle-wave"
+				d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+			/>
+		</defs>
+		<g class="parallax">
+			<use
+				xlink:href="#gentle-wave"
+				x="48"
+				y="0"
+				fill="rgba(255,255,255,0.7"
+			/>
+			<use
+				xlink:href="#gentle-wave"
+				x="48"
+				y="3"
+				fill="rgba(255,255,255,0.5)"
+			/>
+			<use
+				xlink:href="#gentle-wave"
+				x="48"
+				y="5"
+				fill="rgba(255,255,255,0.3)"
+			/>
+			<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+		</g>
+	</svg>
+</div> -->
 
 {% endblock %}
