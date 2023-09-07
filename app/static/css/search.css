@@ -8,12 +8,17 @@
 }
 
 .send-btn-allowed svg {
-	color: rgba(84, 58, 183, 1) !important;
+	color: rgba(37, 196, 129, 1) !important;
+	/* color: rgba(0, 0, 255, 1); */
 }
 
 .send-btn svg {
 	height: 20px;
-	color: rgba(84, 58, 183, 0.5);
+	color: rgba(37, 196, 129, 0.5);
+	/* color: rgba(0, 0, 255, 0.5); */
+
+	filter: invert();
+	cursor: pointer;
 }
 
 /* Style the textarea container */

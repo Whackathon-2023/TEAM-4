@@ -3,11 +3,7 @@
 body {
 	margin: 0;
 	overflow: hidden;
-	background: linear-gradient(
-		60deg,
-		rgba(84, 58, 183, 1) 0%,
-		rgba(0, 172, 193, 1) 100%
-	) !important;
+	background: linear-gradient(to right, #25c481, #25b7c4);
 }
 
 h1 {

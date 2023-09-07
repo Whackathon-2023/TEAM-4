@@ -51,15 +51,14 @@ textarea.addEventListener('input', checkTextareaContent);
 checkTextareaContent();
 
 function senddata() {
-	answerTextarea.style.display = 'block';
-
 	if (textarea.value.trim() !== '') {
+		answerTextarea.style.display = 'block';
 		if (textarea.value.includes('dates'))
 			answerTextarea.innerText = data['dates'];
 		else if (textarea.value.includes('ports'))
 			answerTextarea.innerText = data['ports'];
 		else answerTextarea.innerText = data['default'];
-	}
+	} else return;
 
 	let typer = document.getElementsByClassName('typewriter');
 
