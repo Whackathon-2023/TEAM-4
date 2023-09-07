@@ -2,6 +2,8 @@ import csv
 from shipping import Shipping
 from flask import Flask, jsonify, render_template, request, send_from_directory
 from generate_table import dashboard
+import random
+from lookup import ShippingDataGenerator
 app = Flask(__name__)
 
 # Define a context processor function
@@ -39,10 +41,32 @@ def search():
 def analyse():
     return render_template('analyse.html')
 
+
+@app.route('/api/data/<string:id>')
+def get_lookup_data(id):
+    departure_places = ["Seattle", "Tacoma", "Olympia"]
+    destination_places = ["Los Angeles", "San Francisco", "Portland"]
+    start_date_range = ["2023-01-01", "2023-06-30"]
+
+    generator = ShippingDataGenerator(
+        id=id,
+        departure_places=departure_places,
+        destination_places=destination_places,
+        start_date_range=start_date_range,
+        max_period="30"  # Maximum period in days
+    )
+    data = generator.generate_lookup_data(100)
+    return data
+
+
+
+
 @app.route('/analyse/lookup/<string:id>')
 def lookup(id):
     # Pass the 'id' parameter to the template
-    return render_template('search.html', id=id)
+    return render_template('lookup.html', id=id)
+
+
 
 @app.route('/get_dash_data')
 def get_dash_data():
