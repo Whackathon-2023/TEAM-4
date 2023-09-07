@@ -17,7 +17,7 @@ class Chatbot():
         response = openai.ChatCompletion.create(
         engine="team4",
         messages = [{"role":"user","content":message}],
-        temperature=0.05,
+        temperature=0.7,
         max_tokens=self.token,
         top_p=0.95,
         frequency_penalty=0,

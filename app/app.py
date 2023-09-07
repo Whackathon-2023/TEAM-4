@@ -56,7 +56,7 @@ def get_lookup_data(id):
         start_date_range=start_date_range,
         max_period="30"  # Maximum period in days
     )
-    data = generator.generate_lookup_data(20)
+    data = generator.generate_lookup_data(10)
     return data
 
 
@@ -95,7 +95,7 @@ def chatbot():
 @app.route('/get_dash_data')
 def get_dash_data():
     d = dashboard()
-    return d.generate_data(20)
+    return d.generate_data(5)
     
 
 @app.route('/static/config.json')
