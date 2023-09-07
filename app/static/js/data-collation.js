@@ -145,10 +145,10 @@ function sendMessageToChatbot() {
         .then((response) => response.json())
         .then((responseJson) => {
           // Handle the chatbot's response here (responseJson)
-   
+         console.log(responseJson);
           let messageContent = responseJson['answer']['choices'][0]['message']['content'];
           let respond = messageContent;
-          console.log(respond);
+        //   console.log(respond);
           // You can perform additional actions here with the chatbot's response
           filterTableWithJsonData(JSON.parse(respond));
           // Example: Send the answer to the server

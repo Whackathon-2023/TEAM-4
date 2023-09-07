@@ -3,6 +3,7 @@ from app.shipping import Shipping
 from app.lookup import ShippingDataGenerator
 from flask import Flask, jsonify, render_template, request, send_from_directory
 from app.generate_table import dashboard
+from app.ai import Chatbot
 app = Flask(__name__)
 
 # Define a context processor function
