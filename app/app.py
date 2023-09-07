@@ -2,6 +2,9 @@ import csv
 from app.shipping import Shipping
 from app.generate_table import dashboard
 from flask import Flask, jsonify, render_template, request, send_from_directory
+import json
+
+from app.search import query_ai
 
 from app import app
 
@@ -50,6 +53,17 @@ def lookup(id):
 def get_dash_data():
     d = dashboard()
     return d.generate_data(100)
+
+@app.route('/process', methods=['POST'])
+def process_data():
+    data = request.json
+    value = data.get('value', None)
+    f = open('data/Vessels-To-Ports-mockdata.json')
+    data = str(json.load(f))
+    f.close()
+    
+    result = query_ai(value, data)
+    return jsonify({'result': result})
     
 
 @app.route('/static/config.json')

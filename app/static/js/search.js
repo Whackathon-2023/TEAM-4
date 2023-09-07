@@ -35,6 +35,20 @@ textarea.addEventListener('input', adjustTextareaRows);
 // Initially adjust rows based on placeholder text
 adjustTextareaRows();
 
+async function sendData() {
+    const value = textarea.value;
+    const response = await fetch('/process', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 'value': value }),
+    });
+    const data = await response.json();
+	const out = data.result;
+    return out;
+}
+
 // Function to check if there is text in the textarea and change the button color
 function checkTextareaContent() {
 	if (textarea.value.trim() !== '') {
@@ -50,22 +64,15 @@ textarea.addEventListener('input', checkTextareaContent);
 // Initially check textarea content on page load
 checkTextareaContent();
 
-function senddata() {
+async function senddata() {
 	if (textarea.value.trim() !== '') {
+
+		const result = await sendData();
+		console.log(result)
+		answerTextarea.innerText = result;
+
 		answerTextarea.style.display = 'block';
-		if (textarea.value.includes('dates'))
-			answerTextarea.innerText = data['dates'];
-		else if (textarea.value.includes('ports'))
-			answerTextarea.innerText = data['ports'];
-		else answerTextarea.innerText = data['default'];
-	} else return;
-
-	let typer = document.getElementsByClassName('typewriter');
-
-	for (let i = 0; i < typer.length; i++) {
-		let typewriter = setupTypewriter(typer[i]);
-
-		typewriter.type();
+		answerTextarea.innerHTML = result;
 	}
 }
 
