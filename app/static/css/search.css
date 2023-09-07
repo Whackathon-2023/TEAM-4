@@ -90,6 +90,7 @@
 	border: solid 1px rgba(149, 157, 165, 0.2);
 	resize: none; /* Disable manual resizing */
 	overflow: auto; /* Add scrollbar when needed */
+	display: none;
 }
 
 .waves {
