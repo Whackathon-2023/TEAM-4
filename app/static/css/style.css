@@ -67,6 +67,7 @@
 body {
 	height: 100vh;
 	background: linear-gradient(to right, #25c481, #25b7c4);
+	font-family: 'Lato', sans-serif;
 }
 
 ul {
