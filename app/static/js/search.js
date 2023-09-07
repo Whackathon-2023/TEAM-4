@@ -38,7 +38,7 @@ adjustTextareaRows();
 
 async function sendData() {
     const value = textarea.value;
-    const response = await fetch('/process', {
+    const response = await fetch('/search_chat', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
