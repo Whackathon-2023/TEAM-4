@@ -91,3 +91,32 @@ collateData().then((data) => {
     let table = document.getElementById("collated-data");
     console.log(data);
 });
+
+
+fetch('get_dash_data')
+.then(response => response.json())
+.then(data => {
+    // Get the tbody element by ID
+    const tbody = document.getElementById('collated-data');
+    // data = JSON.parse(data);
+    console.log(data);
+    // Loop through the data and create table rows
+    data.forEach(item => {
+        const row = document.createElement('tr');
+        
+        // Loop through the keys (headings) in each item
+        for (const key in item) {
+            if (item.hasOwnProperty(key)) {
+                const cell = document.createElement('td');
+                cell.textContent = item[key];
+                row.appendChild(cell);
+            }
+        }
+
+        // Append the row to the tbody
+        tbody.appendChild(row);
+    });
+})
+.catch(error => {
+    console.error('Error:', error);
+});

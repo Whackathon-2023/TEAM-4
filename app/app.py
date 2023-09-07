@@ -1,7 +1,7 @@
 import csv
 from shipping import Shipping
 from flask import Flask, jsonify, render_template, request, send_from_directory
-
+from generate_table import dashboard
 app = Flask(__name__)
 
 # Define a context processor function
@@ -39,6 +39,12 @@ def search():
 def analyse():
     return render_template('analyse.html')
 
+@app.route('/get_dash_data')
+def get_dash_data():
+    d = dashboard()
+    return d.generate_data(100)
+    
+
 @app.route('/static/config.json')
 def get_config_json():
     return send_from_directory('./', 'config.json')
@@ -68,6 +74,7 @@ def get_ships():
                     ship_mapping[agency] = [ship]
 
     return jsonify({'AgencyShipMapping': ship_mapping})
+
 
 @app.route('/api/get_ports_visited', methods=['GET'])
 def get_ports_visited():
