@@ -2,12 +2,8 @@ import csv
 from app.shipping import Shipping
 from app.generate_table import dashboard
 from flask import Flask, jsonify, render_template, request, send_from_directory
-import json
-
-from app.search import query_ai
-
-from app import app
-
+from generate_table import dashboard
+app = Flask(__name__)
 
 # Define a context processor function
 @app.context_processor
@@ -44,26 +40,60 @@ def search():
 def analyse():
     return render_template('analyse.html')
 
+
+@app.route('/api/data/<string:id>')
+def get_lookup_data(id):
+    departure_places = ["Seattle", "Tacoma", "Olympia"]
+    destination_places = ["Los Angeles", "San Francisco", "Portland"]
+    start_date_range = ["2023-01-01", "2023-06-30"]
+
+    generator = ShippingDataGenerator(
+        id=id,
+        departure_places=departure_places,
+        destination_places=destination_places,
+        start_date_range=start_date_range,
+        max_period="30"  # Maximum period in days
+    )
+    data = generator.generate_lookup_data(10)
+    return data
+
+
+
+
 @app.route('/analyse/lookup/<string:id>')
 def lookup(id):
     # Pass the 'id' parameter to the template
-    return render_template('search.html', id=id)
+    return render_template('lookup.html', id=id)
+
+@app.route('/chatbot', methods=['GET', 'POST'])
+def chatbot():
+    if request.method == 'POST':
+        try:
+            # Handle the POST request and chatbot logic here
+            request_data = request.json
+  
+            message = request_data.get('message')
+            
+            # Perform your chatbot logic with the message
+            bot = Chatbot()
+            response = bot.call_chatbot(message)
+ 
+
+            return jsonify({'answer': response})
+
+        except Exception as e:
+            # Handle exceptions gracefully
+            return jsonify({'error': str(e)}), 500  # Return an error response with a 500 status code
+
+    # Handle GET requests (if needed)
+    return render_template('analyse.html')  # Or return any other response for GET requests
+
+
 
 @app.route('/get_dash_data')
 def get_dash_data():
     d = dashboard()
     return d.generate_data(100)
-
-@app.route('/process', methods=['POST'])
-def process_data():
-    data = request.json
-    value = data.get('value', None)
-    f = open('data/Vessels-To-Ports-mockdata.json')
-    data = str(json.load(f))
-    f.close()
-    
-    result = query_ai(value, data)
-    return jsonify({'result': result})
     
 
 @app.route('/static/config.json')

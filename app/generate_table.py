@@ -86,7 +86,8 @@ class dashboard():
                 "PRODUCT TYPE": self.product_name(),
                 "VOLUME":round(self.random_volume()),
                 "FOB PRICE PER UNIT (AUD)": round(uniform(10, 100), 2),
-                "DATE": datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                "DATE": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                "PORT":random.randint(1,100)
             }
             data.append(record)
 
