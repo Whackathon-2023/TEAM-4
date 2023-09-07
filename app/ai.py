@@ -5,7 +5,7 @@ import openai
 
 class Chatbot():
     def __init__(self) -> None:
-        self.token = 300
+        self.token = 2000
 
         self.key = "f06743f3d6024b488a38022f476ea726"
     def call_chatbot(self, message):

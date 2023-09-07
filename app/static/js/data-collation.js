@@ -2,8 +2,8 @@
 
 
 let jsonData;
-function fetchDataAndPopulateTable() {
-    fetch('get_dash_data')
+async function fetchDataAndPopulateTable() {
+    await fetch('get_dash_data')
         .then(response => response.json())
         .then(data => {
             // Get the tbody element by ID
@@ -29,7 +29,7 @@ function fetchDataAndPopulateTable() {
                 // Add a click event listener to redirect when a row is clicked
                 row.addEventListener('click', () => {
                     const targetUrl = row.getAttribute('data-href');
-                    console.log('Target URL:', targetUrl);
+                    // console.log('Target URL:', targetUrl);
                     if (targetUrl) {
                         window.location.href = targetUrl;
                     }
@@ -127,9 +127,10 @@ function sendMessageToChatbot() {
     // Add an event listener to the send button
     sendMessageButton.addEventListener('click', () => {
       // Get the message from the input field
-      const message = messageInput.value;
-  
+      const message = messageInput.value + "(return a full JSON only don't return any text): " + JSON.stringify(jsonData);
+      
       // Create a data object with the message
+
       const data = { message };
 
   
@@ -144,11 +145,12 @@ function sendMessageToChatbot() {
         .then((response) => response.json())
         .then((responseJson) => {
           // Handle the chatbot's response here (responseJson)
-  
+   
           let messageContent = responseJson['answer']['choices'][0]['message']['content'];
-          console.log(messageContent);
+          let respond = messageContent;
+          console.log(respond);
           // You can perform additional actions here with the chatbot's response
-  
+          filterTableWithJsonData(JSON.parse(respond));
           // Example: Send the answer to the server
           // sendAnswerToServer(messageContent);
   
@@ -165,6 +167,49 @@ function sendMessageToChatbot() {
   sendMessageToChatbot();
   
 
-
+  function filterTableWithJsonData(data) {
+    // Get the tbody element by ID
+    const tbody = document.getElementById('collated-data');
+  
+    // Clear the table before populating it with filtered data
+    tbody.innerHTML = ''; // This line clears the existing table content.
+    console.log(data);
+    // Loop through the data and create table rows
+    data.forEach(item => {
+      const row = document.createElement('tr');
+      // Loop through the keys (headings) in each item
+      for (const key in item) {
+        if (item.hasOwnProperty(key)) {
+          const cell = document.createElement('td');
+          cell.textContent = item[key];
+          row.appendChild(cell);
+        }
+      }
+      let id = item['ID'];
+      // Add a data-href attribute to specify the target page URL
+      // row.setAttribute('data-href', '/analyse/lookup.html'); // Replace 'page2.html' with the actual URL
+      row.setAttribute('data-href', `/analyse/lookup/${id}`); // Replace 'page2.html' with the actual URL
+      // Add a click event listener to redirect when a row is clicked
+      row.addEventListener('click', () => {
+        const targetUrl = row.getAttribute('data-href');
+        // console.log('Target URL:', targetUrl);
+        if (targetUrl) {
+          window.location.href = targetUrl;
+        }
+      });
+      // Append the row to the tbody
+      tbody.appendChild(row);
+    });
+  
+    // Additional actions or filters can be applied as needed
+  
+    company_filter();
+  }
+  
+  
+  // Example usage:
+  // Pass your JSON data to the function to filter the table
+  // filterTableWithJsonData(filteredData);
+  
 
 
