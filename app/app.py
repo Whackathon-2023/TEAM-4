@@ -39,6 +39,10 @@ def search():
 def analyse():
     return render_template('analyse.html')
 
+@app.route('/analyse/lookup')
+def lookup():
+    return render_template('search.html')
+
 @app.route('/get_dash_data')
 def get_dash_data():
     d = dashboard()
