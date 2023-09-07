@@ -5,7 +5,6 @@ from flask import Flask, jsonify, render_template, request, send_from_directory
 from app.generate_table import dashboard
 from app.ai import Chatbot
 
-import json
 
 from app.search import query_ai
 
@@ -50,11 +49,8 @@ def analyse():
 def process_data():
     data = request.json
     value = data.get('value', None)
-    f = open('./data/Vessels-To-Ports-mockdata.json')
-    data = str(json.load(f))
-    f.close()
 
-    result = query_ai(value, data)
+    result = query_ai(value)
     return jsonify({'result': result})
 
 
