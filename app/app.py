@@ -28,6 +28,7 @@ def get_object():
     obj = Shipping()
     obj.make_table()
     obj.json_form()
+
     return jsonify(obj.table)
 
 @app.route('/search')

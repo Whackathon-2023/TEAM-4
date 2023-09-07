@@ -109,7 +109,7 @@ class Shipping:
     
     def json_form(self):
         for x,y in self.table.items():
-            self.table[x] = y.to_json()
+            self.table[x] = [y.to_json()]
         result = json.dumps(self.table)
         return result
 
