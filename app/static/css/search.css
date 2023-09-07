@@ -76,7 +76,7 @@
 	background-color: white;
 	width: 78%;
 	margin: 20px auto 0px 10%;
-	height: 65%;
+	max-height: 65%;
 	/* border: 2px solid #ccc; */
 	border: none;
 	border-radius: 16px;
