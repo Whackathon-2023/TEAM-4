@@ -132,7 +132,7 @@ function sendMessageToChatbot() {
       // Create a data object with the message
 
       const data = { message };
-
+      console.log(data);
   
       // Configure the fetch request
       fetch(url, {
