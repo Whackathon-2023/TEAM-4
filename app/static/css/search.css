@@ -103,15 +103,18 @@
 }
 
 .loader-container {
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 70vh;
 	width: 100vw;
-	position: absolute;
+	left: 0;
+	pointer-events: none;
 }
 
 .loader {
+	z-index: 100;
 	border: 16px solid #f3f3f3;
 	border-top: 16px solid rgb(100, 176, 169);
 	border-radius: 50%;
