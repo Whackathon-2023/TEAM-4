@@ -152,7 +152,7 @@ def get_ports_visited():
         return jsonify({'error': 'VesselName parameter is missing'}), 400
 
     try:
-        with open('data/Vessels-To-Ports-mockdata.json', 'r', encoding='utf-8') as json_file:
+        with open('./data/Vessels-To-Ports-mockdata.json', 'r', encoding='utf-8') as json_file:
             data = json.load(json_file)
 
         vessels = data.get('vessels', [])
