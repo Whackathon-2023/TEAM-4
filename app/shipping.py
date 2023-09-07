@@ -34,6 +34,23 @@ class Shipping:
             'SSP': 4500
             }
 
+        self.products = ['Urea', 'UAN', 'MOP', 'MAP', 'SSP']
+
+        self.discharge_rate = {
+            'Urea': 3500,
+            'UAN': 10000,
+            'MOP': 5000,
+            'MAP': 5000,
+            'SSP': 4500
+            }
+        
+        self.agency   = {
+            "Inchcape Shipping Services": 'Nutrien',
+            "Sturrock Gridrod Maritime (australia) Pty Ltd": 'Nutrien',
+            "Quay Marine Agencies P/L": 'Summit',
+            "Gulf Agency Company (Australia) Pty/Ltd": 'Summit',
+            "Monson Agencies Australia": 'CBH'
+        }
         self.table = self.make_table()
 
 

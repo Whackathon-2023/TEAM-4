@@ -1,6 +1,8 @@
 import csv
 from app.shipping import Shipping
+from app.generate_table import dashboard
 from flask import Flask, jsonify, render_template, request, send_from_directory
+
 from app import app
 
 
@@ -39,6 +41,17 @@ def search():
 def analyse():
     return render_template('analyse.html')
 
+@app.route('/analyse/lookup/<string:id>')
+def lookup(id):
+    # Pass the 'id' parameter to the template
+    return render_template('search.html', id=id)
+
+@app.route('/get_dash_data')
+def get_dash_data():
+    d = dashboard()
+    return d.generate_data(100)
+    
+
 @app.route('/static/config.json')
 def get_config_json():
     return send_from_directory('./', 'config.json')
@@ -68,6 +81,7 @@ def get_ships():
                     ship_mapping[agency] = [ship]
 
     return jsonify({'AgencyShipMapping': ship_mapping})
+
 
 @app.route('/api/get_ports_visited', methods=['GET'])
 def get_ports_visited():
