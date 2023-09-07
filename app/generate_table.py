@@ -14,6 +14,7 @@ import uuid
 
 
 
+
 class dashboard():
     def __init__(self) -> None:
         # Create a list of dictionaries containing the data

@@ -1,8 +1,8 @@
 import csv
 from app.shipping import Shipping
-from app.generate_table import dashboard
+from app.lookup import ShippingDataGenerator
 from flask import Flask, jsonify, render_template, request, send_from_directory
-from generate_table import dashboard
+from app.generate_table import dashboard
 app = Flask(__name__)
 
 # Define a context processor function
@@ -93,7 +93,7 @@ def chatbot():
 @app.route('/get_dash_data')
 def get_dash_data():
     d = dashboard()
-    return d.generate_data(100)
+    return d.generate_data(10)
     
 
 @app.route('/static/config.json')
