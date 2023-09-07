@@ -10,7 +10,7 @@ from shipping import Shipping
 import json
 from random import randint, uniform
 from datetime import datetime
-
+import uuid
 
 
 
@@ -40,8 +40,6 @@ class dashboard():
         company = ['Nutrien','Summit','CBH']
         return random.choice(company)
     
-    def vessel_name(self):
-        return 'x'
     
     def product_name(self):
         return random.choice(self.products)
@@ -82,10 +80,11 @@ class dashboard():
         data = []
         for _ in range(num_records):
             record = {
+                 "ID":str(uuid.uuid1()),
                 "COMPANY NAME": self.company_name(),
                 "VESSEL": f"Vessel {randint(1, 5)}",
                 "PRODUCT TYPE": self.product_name(),
-                "VOLUME":self.random_volume(),
+                "VOLUME":round(self.random_volume()),
                 "FOB PRICE PER UNIT (AUD)": round(uniform(10, 100), 2),
                 "DATE": datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }

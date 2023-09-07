@@ -39,9 +39,10 @@ def search():
 def analyse():
     return render_template('analyse.html')
 
-@app.route('/analyse/lookup')
-def lookup():
-    return render_template('search.html')
+@app.route('/analyse/lookup/<string:id>')
+def lookup(id):
+    # Pass the 'id' parameter to the template
+    return render_template('search.html', id=id)
 
 @app.route('/get_dash_data')
 def get_dash_data():

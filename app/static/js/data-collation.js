@@ -100,14 +100,12 @@ fetch('get_dash_data')
     .then(data => {
         // Get the tbody element by ID
         const tbody = document.getElementById('collated-data');
-        console.log(tbody);
         // data = JSON.parse(data);
         console.log(data);
         jsonData = data;
         // Loop through the data and create table rows
         jsonData.forEach(item => {
             const row = document.createElement('tr');
-            // console.log(row);
             // Loop through the keys (headings) in each item
             for (const key in item) {
                 if (item.hasOwnProperty(key)) {
@@ -116,10 +114,10 @@ fetch('get_dash_data')
                     row.appendChild(cell);
                 }
             }
-
+            let id = item['ID'];
             // Add a data-href attribute to specify the target page URL
-            row.setAttribute('data-href', '/analyse/lookup.html'); // Replace 'page2.html' with the actual URL
-            // row.setAttribute('data-href', `/analyse/lookup/${id}.html`); // Replace 'page2.html' with the actual URL
+            // row.setAttribute('data-href', '/analyse/lookup.html'); // Replace 'page2.html' with the actual URL
+            row.setAttribute('data-href', `/analyse/lookup/${id}`); // Replace 'page2.html' with the actual URL
             // Add a click event listener to redirect when a row is clicked
             row.addEventListener('click', () => {
                 const targetUrl = row.getAttribute('data-href');
@@ -186,7 +184,7 @@ fetch('get_dash_data')
     
             // Show rows that match the selected company or show all rows if 'All' is selected
             rows.forEach(row => {
-                const companyName = row.querySelector('td:nth-child(1)').textContent; // Assuming the first column contains the company name
+                const companyName = row.querySelector('td:nth-child(2)').textContent; // Assuming the second column contains the company name
                 if (selectedCompany === 'All' || companyName === selectedCompany) {
                     row.style.display = 'table-row';
                 }
