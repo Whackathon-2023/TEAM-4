@@ -50,7 +50,7 @@ def analyse():
 def process_data():
     data = request.json
     value = data.get('value', None)
-    f = open('data/Vessels-To-Ports-mockdata.json')
+    f = open('./data/Vessels-To-Ports-mockdata.json')
     data = str(json.load(f))
     f.close()
 
