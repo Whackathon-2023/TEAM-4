@@ -1,8 +1,8 @@
 import csv
-from shipping import Shipping
+from app.shipping import Shipping
 from flask import Flask, jsonify, render_template, request, send_from_directory
+from app import app
 
-app = Flask(__name__)
 
 # Define a context processor function
 @app.context_processor
