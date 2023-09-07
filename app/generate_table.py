@@ -6,7 +6,7 @@ from datetime import date, timedelta
 import json
 import datetime
 from dateutil.relativedelta import relativedelta
-from shipping import Shipping
+from app.shipping import Shipping
 import json
 from random import randint, uniform
 from datetime import datetime
