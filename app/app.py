@@ -4,6 +4,7 @@ from flask import Flask, jsonify, render_template, request, send_from_directory
 from generate_table import dashboard
 import random
 from lookup import ShippingDataGenerator
+from ai import Chatbot
 app = Flask(__name__)
 
 # Define a context processor function
@@ -65,6 +66,29 @@ def get_lookup_data(id):
 def lookup(id):
     # Pass the 'id' parameter to the template
     return render_template('lookup.html', id=id)
+
+@app.route('/chatbot', methods=['GET', 'POST'])
+def chatbot():
+    if request.method == 'POST':
+        try:
+            # Handle the POST request and chatbot logic here
+            request_data = request.json
+  
+            message = request_data.get('message')
+            
+            # Perform your chatbot logic with the message
+            bot = Chatbot()
+            response = bot.call_chatbot(message)
+ 
+
+            return jsonify({'answer': response})
+
+        except Exception as e:
+            # Handle exceptions gracefully
+            return jsonify({'error': str(e)}), 500  # Return an error response with a 500 status code
+
+    # Handle GET requests (if needed)
+    return render_template('analyse.html')  # Or return any other response for GET requests
 
 
 
