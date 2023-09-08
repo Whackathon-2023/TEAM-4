@@ -1,5 +1,9 @@
 {% extends "components/layout.html" %} {% block content %}
+<link
+	rel="stylesheet"
+	href="{{ url_for('static', filename='css/track_map.css') }}"
+/>
 
-    <div id="container"></div>
-    <script src="static/js/track_map.js"></script>
+<div id="map-container"></div>
+<script src="static/js/track_map.js"></script>
 {% endblock %}

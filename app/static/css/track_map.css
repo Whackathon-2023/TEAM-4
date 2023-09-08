@@ -1,0 +1,6 @@
+#map-container {
+	width: 100vw;
+	height: calc(100vh - 52px);
+	margin: 0;
+	padding: 0;
+}
