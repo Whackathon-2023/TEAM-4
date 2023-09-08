@@ -75,15 +75,18 @@ class dashboard():
 
             ship_details = self.calculate_ship_details(summer_dwt, max_depth, empty_depth, actual_depth)
             return ship_details['Volume']
+    
+    def generate_id(self):
+         return str(uuid.UUID(int=random.getrandbits(128)))
 
     def generate_data(self,num_records):
 
         data = []
         for _ in range(num_records):
             record = {
-                 "ID":str(uuid.uuid1()),
+                 "ID":self.generate_id(),
                 "COMPANY NAME": self.company_name(),
-                "VESSEL": f"Vessel {randint(1, 5)}",
+                "VESSEL": f"Vessel {randint(1, 20)}",
                 "PRODUCT TYPE": self.product_name(),
                 "VOLUME":round(self.random_volume()),
                 "FOB PRICE PER UNIT (AUD)": round(uniform(10, 100), 2),
