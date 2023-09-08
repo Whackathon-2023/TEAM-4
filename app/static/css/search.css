@@ -79,7 +79,7 @@
 	padding: 10px;
 	position: fixed;
 	background-color: white;
-	width: 78%;
+	width: calc(80% - 28px);
 	margin: 20px auto 0px 10%;
 	max-height: 65%;
 	/* border: 2px solid #ccc; */
