@@ -4,6 +4,7 @@ from app.lookup import ShippingDataGenerator
 from flask import Flask, jsonify, render_template, request, send_from_directory
 from app.generate_table import dashboard
 from app.ai import Chatbot
+from app.search_map import query_map_ai
 
 
 from app.search import query_ai
@@ -56,6 +57,14 @@ def process_data():
 
     result = query_ai(value)
     return jsonify({'result': result})
+
+@app.route('/search_map_ai', methods=['POST'])
+def search_map():
+    data = request.json
+    value = data.get('value', None)
+
+    result = query_map_ai(value)
+    return result
 
 
 @app.route('/api/data/<string:id>')
