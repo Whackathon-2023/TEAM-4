@@ -132,13 +132,17 @@ function createBarChart(xValues, yValues) {
     // Create a new canvas element
     var canvas = document.createElement('canvas');
 
-    // Style the canvas (adjust these styles as needed)
+    canvas.width = 400;
+    canvas.height = 250;
     canvas.style.margin = 'auto'; // Center the canvas horizontally
     canvas.style.display = 'block'; // Make the canvas a block element
+  
+    // Style the canvas (adjust these styles as needed)
+
     // Generate a unique ID for the canvas
     var canvasId = 'canvas' + new Date().getTime();
     canvas.id = canvasId;
-    
+ 
     // Append the canvas to a container in your HTML (you may need to adjust this part)
     document.getElementById('chartContainer').appendChild(canvas);
   
@@ -159,7 +163,8 @@ function createBarChart(xValues, yValues) {
         title: {
           display: true,
           text: "How long have the ship stayed in each country over the past year"
-        }
+        },
+  
       }
     });
   }
