@@ -47,7 +47,8 @@ class ShippingDataGenerator:
                 "destination_place": destination_place,
                 "start_date": shipping_date.strftime('%Y-%m-%d'),
                 "end_date": end_date.strftime('%Y-%m-%d'),
-                "period": period
+                "period": period,
+                "PORT":random.randint(1,100)
             }
             data.append(record)
 
