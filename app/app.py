@@ -28,6 +28,10 @@ def home():
 def map_page():
     return render_template('map.html')
 
+@app.route('/track_map')
+def track_map():
+    return render_template('track_map.html')
+
 # Define an endpoint to retrieve the object
 @app.route('/get_object', methods=['GET'])
 def get_object():
