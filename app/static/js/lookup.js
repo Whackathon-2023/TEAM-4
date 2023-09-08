@@ -131,7 +131,10 @@ function generateRandomColors(length) {
 function createBarChart(xValues, yValues) {
     // Create a new canvas element
     var canvas = document.createElement('canvas');
-    canvas.style = "width:50%;max-width:500px";
+
+    // Style the canvas (adjust these styles as needed)
+    canvas.style.margin = 'auto'; // Center the canvas horizontally
+    canvas.style.display = 'block'; // Make the canvas a block element
     // Generate a unique ID for the canvas
     var canvasId = 'canvas' + new Date().getTime();
     canvas.id = canvasId;
