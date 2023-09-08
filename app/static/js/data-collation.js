@@ -1,6 +1,5 @@
 let jsonData;
 const loader = document.getElementsByClassName('loader')[0];
-console.log(loader);
 async function fetchDataAndPopulateTable() {
 	await fetch('get_dash_data')
 		.then((response) => response.json())

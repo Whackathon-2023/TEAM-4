@@ -1,7 +1,7 @@
 #map-container {
-	width: 80vw;
-	height: 80;
-	margin-top: 5vh;
+	width: calc(80% - 28px);
+	height: 65vh;
+	margin: 20px auto 0px 10%;
 	margin-left: 10vw;
 	border-radius: 100px;
 	padding: 0;
@@ -100,4 +100,8 @@
 	resize: none; /* Disable manual resizing */
 	overflow: auto; /* Add scrollbar when needed */
 	display: none;
+}
+
+.loader-container {
+	z-index: 100;
 }

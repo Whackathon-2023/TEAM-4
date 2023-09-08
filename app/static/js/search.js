@@ -37,17 +37,17 @@ textarea.addEventListener('input', adjustTextareaRows);
 adjustTextareaRows();
 
 async function sendData() {
-    const value = textarea.value;
-    const response = await fetch('/search_chat', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 'value': value }),
-    });
-    const data = await response.json();
+	const value = textarea.value;
+	const response = await fetch('/search_chat', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({ value: value }),
+	});
+	const data = await response.json();
 	const out = data.result;
-    return out;
+	return out;
 }
 
 // Function to check if there is text in the textarea and change the button color
@@ -72,12 +72,11 @@ async function senddata() {
 		loader.style.display = 'inline';
 
 		const result = await sendData();
-		console.log(result)
+		console.log(result);
 		answerTextarea.innerText = result;
 
 		answerTextarea.style.display = 'block';
 		loader.style.display = 'none';
-		answerTextarea.innerHTML = result
+		answerTextarea.innerHTML = result;
 	}
 }
-
