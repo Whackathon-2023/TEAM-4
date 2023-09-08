@@ -60,8 +60,20 @@ def process_data():
 
 @app.route('/api/data/<string:id>')
 def get_lookup_data(id):
-    departure_places = ["Seattle", "Tacoma", "Olympia"]
-    destination_places = ["Los Angeles", "San Francisco", "Portland"]
+    departure_places = [
+    "Seattle", "Tacoma", "Olympia", "Los Angeles", "San Francisco",
+    "Portland", "New York", "Chicago", "Miami", "Denver",
+    "Dallas", "Houston", "Atlanta", "Boston", "Las Vegas",
+    "Philadelphia", "Phoenix", "Austin", "Nashville", "Orlando"
+]
+
+    destination_places = [
+    "London", "Paris", "Berlin", "Rome", "Madrid",
+    "Sydney", "Tokyo", "Beijing", "Moscow", "Cairo",
+    "Rio de Janeiro", "Toronto", "Amsterdam", "Dubai",
+    "Bangkok", "New Delhi", "Singapore", "Istanbul", "Stockholm", "Athens"
+]
+
     start_date_range = ["2023-01-01", "2023-06-30"]
 
     generator = ShippingDataGenerator(
