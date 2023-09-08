@@ -25,11 +25,11 @@ def common_data():
 def home():
     return render_template('home.html')
 
-@app.route('/map')
+@app.route('/map_old')
 def map_page():
     return render_template('map.html')
 
-@app.route('/track_map')
+@app.route('/map')
 def track_map():
     return render_template('track_map.html')
 
